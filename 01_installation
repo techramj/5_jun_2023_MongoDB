@@ -14,4 +14,5 @@ copy the mongosh file and paste in the bin folder of mongodb.
 ex: C:\Program Files\MongoDB\Server\6.0\bin
 
 
-step 4: add the path in the system environment variable
+step 4: add the bin path in the system environment variable
+C:\Program Files\MongoDB\Server\6.0\bin
