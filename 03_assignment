@@ -7,5 +7,24 @@
    
 3. display the document list
 
+#Assignement 02
+1. create the collection items
+   and insert 25 items in single query
+   _id:1, item:'Pen', qty:10
+   _id:2, item:'Pen', qty:10
+   _id:3, item:'Pen', qty:10
+   _id:4, item:'Pen', qty:10
+   .
+   .
+   .
+   _id:25, item:'Pencil', qty:100
+
+
+2. display all the record using find
+
+3. display all the record in single execution
+   db.items.find().toArray();
+   
+   
 
 
