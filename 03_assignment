@@ -25,6 +25,7 @@
 3. display all the record in single execution
    db.items.find().toArray();
    
+4. db.employees.find().forEach((emp)=> {printjson(emp);});   
    
 
 
