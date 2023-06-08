@@ -28,10 +28,42 @@
 4. display the record using iteration
 db.employees.find().forEach((emp)=> {printjson(emp);});   
 
-
 ________________________________________________________________________________________________________________
 
 #Assignment  03:
+execute the below query:
+db.emp.drop();
+db.emp.insertMany([
+    {name:'John', salary:10000},
+    {name:'John', salary:5000},
+    {name:'Sam', salary:6000},
+    {name:'Jack', salary:5000},
+    {name:'Joy', salary:3000, age:20},
+    {name:'Ajay', salary:1000},
+    {name:'Vijay', salary:10000},
+]);
+
+a. update the salary of Ajay to 5555
+________________________________________________________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Assignment  04:
 execute the below query:
 db.inventory.insertMany(
 [
