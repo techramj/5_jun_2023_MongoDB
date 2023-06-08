@@ -1,4 +1,4 @@
-# Assignment 01
+# Assignment 01https://github.com/techramj/5_jun_2023_MongoDB/blob/main/03_assignment
 1. create the collection emp
 2. insert three document (record)
    name:    salary:
@@ -43,7 +43,30 @@ db.emp.insertMany([
     {name:'Vijay', salary:10000},
 ]);
 
-a. update the salary of Ajay to 5555
+1. update t5he salary of Ajay to 9999
+db.emp.updateOne({name:'Ajay'}, {salary:9999})
+--MongoInvalidArgumentError: Update document requires atomic operators
+
+db.emp.updateOne({name:'Ajay'}, {$set : {salary:9999}})
+
+
+2. update the salary of John to 5555
+db.emp.updateOne({name:'John'}, {$set : {salary:5555}})
+
+3. how many rows will be modified for below query
+db.emp.updateOne({name:'Sam'}, {$set : {age:21}})
+
+db.emp.updateMany({name:'Sam'}, {$set : {age:22}})
+
+db.emp.updateOne({}, {$set : {age:23}})
+
+
+4.execute the below query and check the output
+db.emp.updateOne({name:'Vijay'}, {$set : {designation:'S/W engg'}})
+
+db.emp.replaceOne({name:'Joy'}, {designation:'S/W engg'})
+
+db.emp.replaceOne({name:'Jack'}, {name:'Jack', salary:8000, age:26,designation:'S/W engg'  })
 ________________________________________________________________________________________________________________
 
 
