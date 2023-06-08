@@ -30,7 +30,7 @@ db.employees.find().forEach((emp)=> {printjson(emp);});
 
 ________________________________________________________________________________________________________________
 
-#Assignment  03:
+#Assignment  03: Update
 execute the below query:
 db.emp.drop();
 db.emp.insertMany([
@@ -69,7 +69,7 @@ db.emp.replaceOne({name:'Joy'}, {designation:'S/W engg'})
 db.emp.replaceOne({name:'Jack'}, {name:'Jack', salary:8000, age:26,designation:'S/W engg'  })
 ________________________________________________________________________________________________________________
 
-#Assignment  04:
+#Assignment  04: Delete
 delete one docuement
 delete more than one document using deleteMany
 eg:
@@ -78,6 +78,24 @@ db.emp.deleteMany({name:'John'});
 db.emp.deleteOne({});
 db.emp.deleteMany({});
  
+________________________________________________________________________________________________________________
+#Assignment  05: Projection
+db.emp.drop();
+db.emp.insertMany([
+    {name:'John', salary:10000},
+    {name:'John', salary:5000},
+    {name:'Sam', salary:6000},
+    {name:'Jack', salary:5000},
+    {name:'Joy', salary:3000, age:20},
+    {name:'Ajay', salary:1000},
+    {name:'Vijay', salary:10000},
+]);
+db.emp.updateMany({}, {$set: {designation: 'S/W engg.'}});
+
+Projection:
+ db.emp.find({}, {name:1});
+ db.emp.find({}, {name:1, salary:1});
+ db.emp.find({}, {name:1, salary:1,_id:0});
 
 
 
@@ -92,9 +110,7 @@ db.emp.deleteMany({});
 
 
 
-
-
-#Assignment  05:
+#Assignment  06:
 execute the below query:
 db.inventory.insertMany(
 [
