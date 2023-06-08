@@ -69,24 +69,32 @@ db.emp.replaceOne({name:'Joy'}, {designation:'S/W engg'})
 db.emp.replaceOne({name:'Jack'}, {name:'Jack', salary:8000, age:26,designation:'S/W engg'  })
 ________________________________________________________________________________________________________________
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #Assignment  04:
+delete one docuement
+delete more than one document using deleteMany
+eg:
+db.emp.deleteOne({name:'Vijay'});
+db.emp.deleteMany({name:'John'});
+db.emp.deleteOne({});
+db.emp.deleteMany({});
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Assignment  05:
 execute the below query:
 db.inventory.insertMany(
 [
