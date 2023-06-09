@@ -97,18 +97,7 @@ Projection:
  db.emp.find({}, {name:1, salary:1});
  db.emp.find({}, {name:1, salary:1,_id:0});
 
-
-
-
-
-
-
-
-
-
-
-
-
+________________________________________________________________________________________________________________
 
 #Assignment  06:
 execute the below query:
@@ -126,7 +115,7 @@ db.inventory.insertMany(
 
 
 ________________________________________________________________________________________________________________
-#Assignment 04
+#Assignment 07:
 db.inventory.drop();
 db.inventory.insertMany(
 [
@@ -144,7 +133,7 @@ db.inventory.insertMany(
 );
 
 ________________________________________________________________________________________________________________
-#Assignment  05:
+#Assignment  08:
 db.createCollection('budgets');
 db.budgets.insertMany([
     {_id:1, category:'food', budget:400, spent:450},
@@ -158,7 +147,7 @@ db.budgets.insertMany([
 
 
 ________________________________________________________________________________________________________________
-#Assignment  07:
+#Assignment  09:
 db.createCollection('articles');
 
 db.articles.insertMany([
