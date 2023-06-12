@@ -159,3 +159,45 @@ db.articles.insertMany([
     {_id:6, subject:'Java framework', author:'xyz', views:10},
     {_id:7, subject:'MongoDB', author:'lmn', views:100}
 ]);
+
+________________________________________________________________________________________________________________
+#assignment: 10
+db.test.insertMany([
+  {  val: 'abc' },
+  {  val: 'def' },
+  {  val: 'lmn' },
+  {  val: 'lmna' },
+  {  val: 'lmnad' }
+]);
+db.test.find({val:/a/})
+________________________________________________________________________________________________________________
+#assignment 11:
+db.articles.drop();
+db.articles.insertMany([
+    {_id:1, code:"xyz", 
+      tags:["school","book","bag","headphone"],
+      qty:[
+        {size:"S", num:10, color: "blue"},
+        {size:"M", num:20, color: "blue"},
+        {size:"L", num:3, color: "red"}
+      ]
+    },
+
+    {_id:2, code:"abc", 
+      tags:["school","book","headphone","pencil"],
+      qty:[
+        {size:"S", num:100, color: "blue"},
+        {size:"M", num:45, color: "green"},
+        {size:"L", num:10, color: "red"}
+      ]
+    },
+
+    {_id:3, code:"pqr", 
+      tags:["bag","headphone"],
+      qty:[
+        {size:"6", num:10, color: "green"},
+        {size:"7", num:40, color: "brown"},
+        {size:"8", num:5, color: "red"}
+      ]
+    }
+])
