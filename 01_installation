@@ -16,3 +16,15 @@ ex: C:\Program Files\MongoDB\Server\6.0\bin
 
 step 4: add the bin path in the system environment variable
 C:\Program Files\MongoDB\Server\6.0\bin
+
+
+
+
+
+
+Step to execute the script
+-----------------------------
+to execute the script
+mongosh <db_name> absolute_path_of_file
+
+mongosh seed D:\workspace\mongodb\05-June-2023\a.js
