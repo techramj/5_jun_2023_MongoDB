@@ -201,3 +201,26 @@ db.articles.insertMany([
       ]
     }
 ])
+
+_________________________________________________________________________________________________________________________
+#assignment 12:
+create the script and execute in blogs db.
+/*
+User -----create-->     Post
+id                      id
+name                    title
+age                     text
+email                   tags :["tech", "db"]
+
+
+
+        comment
+          id
+          text
+          
+user will create a post. (jack, john, Sam, Jessica)
+jack created one post.
+john,Jessica commneted on the post created by Jack.
+
+post have many comments.
+*/
