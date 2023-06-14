@@ -204,6 +204,8 @@ db.articles.insertMany([
 
 _________________________________________________________________________________________________________________________
 #assignment 12:
+
+prerequisite:  execute the mapping scripts.
 create the script and execute in blogs db.
 /*
 User -----create-->     Post
