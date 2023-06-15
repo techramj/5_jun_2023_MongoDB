@@ -1,0 +1,19 @@
+db.emp.drop();
+db.createCollection("emp",{
+    validator :{
+        $jsonSchema:{
+            bsonType : "object",
+            required : ["name", "salary"],
+            properties :{
+                name:{
+                    bsonType:"string",
+                    description : "required, must be a string"
+                },
+                salary:{
+                    bsonType:"number",
+                    description:"required, must be a number"
+                }
+            }
+        }
+    }
+});
