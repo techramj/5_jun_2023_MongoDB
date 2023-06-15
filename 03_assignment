@@ -246,6 +246,10 @@ db.posts.insertOne({
 
 
 
+_________________________________________________________________________________________________________________________
+#assignment 13:
+write teh validation for posts schema.
+test with  multiple example.
 
 
 
