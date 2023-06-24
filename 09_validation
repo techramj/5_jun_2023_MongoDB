@@ -17,3 +17,36 @@ db.createCollection("emp",{
         }
     }
 });
+
+
+//validation of post collection
+
+
+db.createCollection("posts", {
+  validator: {
+    $jsonSchema: {
+      bsonType: "object",
+      required: ["title", "creator", "comments"],
+      properties: {
+        title: { bsonType: "string", description: "required, must be string" },
+        creator: {
+          bsonType: "number",
+          description: "required, must be number",
+        },
+        comments: {
+          bsonType: "array",
+          description: "required, must be array",
+          items: {
+            bsonType: "object",
+            required: ["text","author"],
+            properties: {
+                text :{bsonType:"string", description:"only string allowed"},
+                author :{bsonType:"number", description:"only number allowed"},
+            }
+            
+          },
+        },
+      },
+    },
+  },
+});
